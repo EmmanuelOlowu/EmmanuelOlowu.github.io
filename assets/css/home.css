@@ -31,9 +31,11 @@
 
 #home-section .container .my-info p {
     margin-bottom: 7px;
-    font-family: var(--font-two);
-    font-size: 1.04em;
+    font-family: var(--font-four);
+    font-size: 1.02em;
     text-align: center;
+    text-transform: uppercase;
+    color: var(--body-text-color2);
 }
 #home-section .container .my-info .couple {
     position: relative;
@@ -73,10 +75,16 @@
     }
     #home-section .container .my-info p {
         margin-bottom: 10px;
-        font-size: 1.9em;
+        margin: 0px 180px 0px 180px;
+        font-size: 1.8em;
     }
     #home-section .container .my-info .couple small {
         font-size: 4.7em;
         top: 81px;
     }
+}
+
+#home-section .slideInLEFT.reveal {
+    opacity: 1;
+    animation-name: slideInLeft;
 }

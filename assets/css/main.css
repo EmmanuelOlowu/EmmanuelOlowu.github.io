@@ -32,6 +32,7 @@
 body {
     --body-background: #d4a27e;
     --body-text-color: #fff;
+    --body-text-color2: #29201a;
     --box-background: rgba(248,248,248,0.5);
     --box-shadow-color: 0.05rem 0.1rem 0.3rem -0.03rem rgb(0 0 0 / 45%);
     --time-color: #fff;
@@ -127,10 +128,36 @@ img {
     height: 100%;
     background-color: transparent;
     display: block;
+    overflow: hidden;
 }
 .flex {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+
+/* Animations */
+.zoomInUP,
+.slideInLEFT,
+.slideInRIGHT {
+    opacity: 0;
+}
+
+.zoomInUP.reveal {
+    opacity: 1;
+    animation-name: zoomInUp;
+}
+.slideInLEFT.reveal {
+    opacity: 1;
+    animation-name: slideInLeft;
+}
+.slideInRIGHT.reveal {
+    opacity: 1;
+    animation-name: slideInRight;
+}
+.animated {
+    animation-fill-mode: both !important;
+    animation-duration: 1s;
 }

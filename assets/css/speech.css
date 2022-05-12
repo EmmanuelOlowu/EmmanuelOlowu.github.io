@@ -1,0 +1,69 @@
+#speech-section {
+    background-color: transparent;
+}
+#speech-section .plant {
+    position: absolute;
+    height: 300px;
+    bottom: 0;
+    left: -70px;
+    z-index: -10;
+}
+#speech-section .plant-1 {
+    position: absolute;
+    height: 300px;
+    top: 0;
+    right: 0px;
+    z-index: -10;
+}
+
+#speech-section .container .speech {
+    height: 100%;
+    width: 100%;
+    flex-flow: column wrap;
+    padding: 10px;
+    transition: var(--transition);
+    color: var(--text-color);
+}
+
+#speech-section .container .speech .the-speech {
+    text-align: center;
+    width: 100%;
+}
+#speech-section .container .speech .the-speech hr {
+    width: 50%;
+    margin: 0px auto;
+    border: 1px solid var(--theme-color);
+}
+#speech-section .container .speech .the-speech hr:nth-child(1) {
+    margin-top: 80px;
+}
+#speech-section .container .speech .the-speech p {
+    margin: 30px 10px 30px 10px;
+    font-family: var(--font-two);
+    font-size: 1.1em;
+    text-align: center;
+}
+
+#speech-section .container .speech .couple {
+    position: relative;
+}
+
+#speech-section .container .speech .couple h1 {
+    font-family: var(--font-four);
+    font-size: 6.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 25px;
+    line-height: 145px;
+}
+
+@media screen and (min-width: 990px) {
+    #speech-section .container .speech .the-speech {
+        width: 60%;
+    }
+    #speech-section .container .speech .the-speech p {
+        margin: 30px 50px 30px 50px;
+    }
+}

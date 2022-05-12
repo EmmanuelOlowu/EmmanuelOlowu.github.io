@@ -1,0 +1,82 @@
+#home-section {
+    background-color: transparent;
+    height: 100vh;
+}
+#home-section .plant,
+#home-section .plant-1 {
+    position: absolute;
+    height: 220px;
+    z-index: -10;
+}
+#home-section .plant{
+    bottom: 0;
+    left: -104px;
+    transform: rotate(20deg);
+}
+#home-section .plant-1 {
+    top: 0;
+    right: 0px;
+}
+
+
+#home-section .container .my-info {
+    height: 100%;
+    width: 100%;
+    flex-flow: column wrap;
+    padding: 10px;
+    transition: var(--transition);
+    color: var(--text-color);
+}
+
+
+#home-section .container .my-info p {
+    margin-bottom: 7px;
+    font-family: var(--font-two);
+    font-size: 1.04em;
+    text-align: center;
+}
+#home-section .container .my-info .couple {
+    position: relative;
+}
+#home-section .container .my-info .couple h1 {
+    font-family: var(--font-four);
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 13px;
+    line-height: 70px;
+}
+#home-section .container .my-info .couple small {
+    font-family: var(--font-three);
+    font-size: 2.7em;
+    text-align: center;
+    position: absolute;
+    top: 40px;
+}
+
+@media screen and (min-width: 990px) {
+    #home-section .plant,
+    #home-section .plant-1 {
+        height: 300px;
+        transform: rotate(0deg);
+    }
+    #home-section .plant {
+        bottom: 0;
+        left: -70px;
+    }
+    #home-section .container .my-info .couple h1 {
+        font-size: 6.5em;
+        letter-spacing: 25px;
+        line-height: 145px;
+    }
+    #home-section .container .my-info p {
+        margin-bottom: 10px;
+        font-size: 1.9em;
+    }
+    #home-section .container .my-info .couple small {
+        font-size: 4.7em;
+        top: 81px;
+    }
+}
